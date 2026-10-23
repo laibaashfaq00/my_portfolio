@@ -1,93 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Laiba Ashfaq - Digital Profile</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laiba Ashfaq | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#070709;color:#fff;overflow-x:hidden}
+h1,h2,h3{font-family:'Syne',sans-serif}
+a{color:inherit;text-decoration:none}
+.bg{position:fixed;inset:0;z-index:-1;background:#070709;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:0.7}
+.b1{width:600px;height:600px;background:radial-gradient(circle at 30% 30%, #8b5cf6, #ec4899);top:-150px;left:-100px;animation:float 8s ease-in-out infinite}
+.b2{width:500px;height:500px;background:radial-gradient(circle at 30% 30%, #06b6d4, #3b82f6);bottom:-100px;right:-100px;animation:float 10s ease-in-out infinite reverse}
+.b3{width:400px;height:400px;background:radial-gradient(circle at 30% 30%, #f59e0b, #ef4444);top:40%;left:40%;opacity:0.4}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-30px)}}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 6%;position:fixed;top:0;width:100%;z-index:10;background:rgba(7,7,9,0.6);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.08)}
+.logo{font-weight:800;letter-spacing:-1px;font-size:18px}
+.nav-links{display:flex;gap:24px;font-size:13px;letter-spacing:1px;opacity:0.7}
+.hero{padding:160px 6% 90px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:50px;align-items:center}
+.hero h1{font-size:78px;line-height:0.9;letter-spacing:-3px}
+.hero h1 span{background:linear-gradient(90deg,#8b5cf6,#ec4899,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:rgba(255,255,255,0.6);max-width:430px;line-height:1.8;margin:24px 0 34px}
+.btns{display:flex;gap:14px}
+.btn-gradient{background:linear-gradient(90deg,#8b5cf6,#ec4899);padding:14px 32px;border-radius:100px;font-weight:600;font-size:14px;box-shadow:0 10px 30px rgba(139,92,246,0.3)}
+.btn-glass{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);padding:14px 32px;border-radius:100px;backdrop-filter:blur(10px);font-size:14px}
+.glass{background:linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(30px);border-radius:28px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.glass h3{font-size:22px;margin-bottom:8px}
+.pill{display:inline-block;padding:6px 12px;border-radius:100px;font-size:11px;letter-spacing:1px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.06);margin-right:6px;margin-bottom:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+section{padding:90px 6%}
+.section-title{font-size:52px;letter-spacing:-2px;margin-bottom:16px}
+.section-title span{color:rgba(255,255,255,0.3)}
+.card{background:linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.1);border-radius:22px;padding:30px;transition:0.4s;backdrop-filter:blur(20px)}
+.card:hover{transform:translateY(-6px);border-color:rgba(139,92,246,0.4);box-shadow:0 20px 40px rgba(139,92,246,0.15)}
+.card h3{margin:18px 0 10px;font-size:20px}
+.card p{color:rgba(255,255,255,0.55);font-size:14px;line-height:1.7}
+footer{padding:40px 6%;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;color:rgba(255,255,255,0.4);font-size:13px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:52px}.grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-<!-- Header with name and menu - Day 2 Requirement 2 + Day 6 Requirement 3 -->
-<header class="site-header">
-  <a class="brand" href="index.html">Laiba Ashfaq</a>
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="timetable.html">Timetable</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <!-- Hero - Day 3 Requirement 3 -->
-  <section class="hero">
-    <h1>Laiba Ashfaq</h1>
-    <p class="tagline">Aspiring Web Developer | D4WEE Tier 2 - Multan</p>
-    <a class="btn" href="#contact">Hire Me</a>
-  </section>
-
-  <!-- About - Day 2 Requirement 3 -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am <strong>Laiba Ashfaq</strong> from Multan, learning Web Development in <em>D4WEE</em> program. I want to become a freelancer and build clean websites.</p>
-    <!-- No personal photo - using icon box instead -->
-<div class="about-icon-box">
-  <p style="font-size:50px; margin:0;">👩‍💻</p>
-  <p><strong>Laiba Ashfaq</strong> | D4WEE Tier 2</p>
+<div class="bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<nav>
+<div class="logo">LAIBA.A</div>
+<div class="nav-links"><a href="#work">WORK</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a></div>
+</nav>
+<div class="hero">
+<div>
+<h1>Crafting <br><span>Not Basic</span><br> Portfolios.</h1>
+<p>Hi, I'm Laiba Ashfaq — I turn Craft Shop data & Python analysis into beautiful visual stories. This portfolio is built with gradient magic, not a boring single color.</p>
+<div class="btns">
+<a class="btn-gradient" href="#work">See My Work ✨</a>
+<a class="btn-glass" href="https://github.com/laibaashfaq00/my_portfolio">GitHub ↗</a>
 </div>
-<figure>
-  <figcaption>My learning journey in D4WEE - Multan</figcaption>
-</figure>
-    <blockquote>Learning never exhausts the mind.</blockquote>
-  </section>
-
-  <!-- Skills - Day 2 Requirement 4,5 -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Web Development
-        <ul>
-          <li>HTML</li>
-          <li>CSS - Flexbox & Box Model</li>
-        </ul>
-      </li>
-      <li>Digital Tools - Google Workspace</li>
-      <li>Freelancing Basics</li>
-    </ul>
-
-    <h2>My Goals</h2>
-    <ol>
-      <li>Complete HTML & CSS Portfolio</li>
-      <li>Publish portfolio on GitHub Pages</li>
-      <li>Add Contact and Timetable pages</li>
-      <li>Start JavaScript next week</li>
-    </ol>
-  </section>
-
-  <!-- What I Can Do - Day 3 Requirement 6,7 -->
-  <section id="services">
-    <h2>What I Can Do</h2>
-    <div class="cards">
-      <div class="card"><h3>Web Pages</h3><p>Clean HTML pages with semantic tags.</p></div>
-      <div class="card"><h3>Design</h3><p>Colours, fonts and layouts with CSS.</p></div>
-      <div class="card"><h3>Responsive</h3><p>Works on mobile and desktop.</p></div>
-    </div>
-  </section>
-
-  <hr>
-
-  <!-- Contact links - Day 2 Requirement 7 -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>External: <a href="https://www.google.com" target="_blank" rel="noopener">Visit Google</a></p>
-    <p>Email: <a href="mailto:laiba@example.com">laiba@example.com</a></p>
-  </section>
-</main>
-
-<!-- Footer - Day 2 Requirement 10 -->
-<footer>
-  <p>&copy; 2026 Laiba Ashfaq | D4WEE Portfolio</p>
-</footer>
+</div>
+<div class="glass">
+<div style="display:flex;gap:8px;margin-bottom:20px"><span style="width:12px;height:12px;border-radius:50%;background:#ff5f56"></span><span style="width:12px;height:12px;border-radius:50%;background:#ffbd2e"></span><span style="width:12px;height:12px;border-radius:50%;background:#27c93f"></span></div>
+<h3>Portfolio Status</h3>
+<p style="color:rgba(255,255,255,0.5);font-size:13px;margin:8px 0 18px">Upgraded to advance gradient look ✓</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px">
+<span class="pill">PURPLE • PINK</span><span class="pill">CYAN • BLUE</span><span class="pill">GLASSMORPHISM</span>
+</div>
+<div style="background:rgba(0,0,0,0.4);border-radius:14px;padding:14px;font-family:monospace;font-size:12px;color:#aaa">
+<span style="color:#8b5cf6">const</span> portfolio = {<br>&nbsp;&nbsp;level: <span style="color:#ec4899">"advance"</span>,<br>&nbsp;&nbsp;basic: <span style="color:#06b6d4">false</span>,<br>&nbsp;&nbsp;colors: <span style="color:#f59e0b">["gradient"]</span><br>}
+</div>
+</div>
+</div>
+<section id="work">
+<h2 class="section-title">Selected <span>Work —</span></h2>
+<div class="grid">
+<div class="card">
+<span class="pill">GOOGLE SHEETS</span><span class="pill">LIVE</span>
+<h3>Craft Shop Analysis</h3>
+<p>Complete sales dashboard with profit tracking, best-selling products & monthly trends. Built with Google Sheets & Drive integration.</p>
+</div>
+<div class="card">
+<span class="pill">PYTHON</span><span class="pill">CHARTS</span>
+<h3>Python Data Viz</h3>
+<p>Cleaned messy data with Pandas, visualized with Matplotlib. Automated reporting that looks aesthetic, not boring.</p>
+</div>
+</div>
+</section>
+<section id="skills">
+<h2 class="section-title">Skills <span>Stack —</span></h2>
+<div class="grid">
+<div class="card">
+<h3>What I Use</h3>
+<p style="margin-bottom:16px">Tools I actually used in class</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<span class="pill">HTML • CSS Gradient</span><span class="pill">GitHub Pages</span><span class="pill">Google Sheets</span><span class="pill">Python</span><span class="pill">Glassmorphism</span>
+</div>
+</div>
+<div class="card" style="background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(236,72,153,0.1))">
+<h3>Why Not Basic?</h3>
+<p>Because Mam said basic not allowed 🙂 So I added animated gradient blobs, glass cards, hover effects & multi-color magic. No single-color boring look.</p>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="glass" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px">
+<div>
+<h3 style="font-size:28px">Let's make it live? 🚀</h3>
+<p style="color:rgba(255,255,255,0.5);margin-top:6px">Push this code to: github.com/laibaashfaq00/my_portfolio</p>
+</div>
+<a class="btn-gradient" href="mailto:laiba@example.com">Contact Me</a>
+</div>
+</section>
+<footer><span>© 2026 Laiba Ashfaq — Gradient Edition</span><span>Built with 💜💗💙</span></footer>
 </body>
 </html>
