@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Timetable - Laiba Ashfaq</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timetable | Laiba Ashfaq</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-table{width:100%;border-collapse:collapse;margin-top:20px}
-th,td{border:1px solid rgba(255,255,255,0.1);padding:14px;text-align:left;font-size:14px}
-th{background:rgba(139,92,246,0.15);color:#a78bfa;letter-spacing:1px;font-size:12px}
-td{color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.02)}
-tr:hover td{background:rgba(255,255,255,0.05)}
-</style>
 </head>
 <body>
-<div class="bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
-<nav>
-<div class="logo"><a href="index.html">LAIBA.A</a></div>
-<div class="nav-links"><a href="index.html">HOME</a><a href="timetable.html">TIMETABLE</a><a href="contact.html">CONTACT</a></div>
+<header class="site-header">
+<a class="brand" href="index.html">Laiba Ashfaq</a>
+<nav class="menu">
+<a href="index.html">Home</a>
+<a href="timetable.html">Timetable</a>
+<a href="contact.html">Contact</a>
 </nav>
-<section style="padding-top:160px">
-<h2 class="section-title">Study <span>Timetable —</span></h2>
-<div class="glass" style="overflow-x:auto">
-<p style="color:rgba(255,255,255,0.5);margin-bottom:20px">My weekly class schedule - organized with gradient style</p>
+</header>
+<main>
+<h1>Weekly Study Timetable</h1>
+<div class="table-wrap">
 <table>
-<tr><th>Day / Time</th><th>9-10 AM</th><th>10-11 AM</th><th>11-12 PM</th><th>12-1 PM</th></tr>
-<tr><td>Monday</td><td>Python</td><td>Data Analysis</td><td>Break</td><td>Portfolio Work</td></tr>
-<tr><td>Tuesday</td><td>Google Sheets</td><td>Craft Shop Project</td><td>Break</td><td>GitHub Practice</td></tr>
-<tr><td>Wednesday</td><td>Web Dev</td><td>CSS Gradient</td><td>Break</td><td>Contact Page</td></tr>
-<tr><td>Thursday</td><td>Revision</td><td>Project Submission</td><td>Break</td><td>Free</td></tr>
-<tr><td>Friday</td><td>New Learning</td><td>Practice</td><td>Break</td><td>Weekend Plan</td></tr>
+<caption>Weekly study timetable</caption>
+<thead>
+<tr>
+<th>Day</th>
+<th>Morning</th>
+<th>Afternoon</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Monday</td><td>HTML</td><td>Practice</td></tr>
+<tr><td>Tuesday</td><td>CSS</td><td>Portfolio</td></tr>
+<tr><td>Wednesday</td><td>Git & GitHub</td><td>Forms</td></tr>
+<tr><td>Thursday</td><td>Tables</td><td>Responsive</td></tr>
+<tr><td>Friday</td><td>Revision</td><td>Project Work</td></tr>
+<tr><td colspan="3">Weekend - Project Submission & Rest</td></tr>
+</tbody>
 </table>
 </div>
-</section>
-<footer><span>© 2026 Laiba Ashfaq</span><span>Timetable — Gradient Edition</span></footer>
+</main>
 </body>
 </html>
