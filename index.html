@@ -1,53 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laiba Ashfaq | Portfolio</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
-<nav>
-<div class="logo">LAIBA.A</div>
-<div class="nav-links"><a href="#work">WORK</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a></div>
+<header class="site-header">
+<a class="brand" href="index.html">Laiba Ashfaq</a>
+<nav class="menu">
+<a href="index.html">Home</a>
+<a href="timetable.html">Timetable</a>
+<a href="contact.html">Contact</a>
 </nav>
-<div class="hero">
-<div>
-<h1>Crafting <br><span>Not Basic</span><br> Portfolios.</h1>
-<p>Hi, I'm Laiba Ashfaq — I turn Craft Shop data & Python analysis into beautiful visual stories. This portfolio is built with gradient magic, not a boring single color.</p>
-<div class="btns">
-<a class="btn-gradient" href="#work">See My Work ✨</a>
-<a class="btn-glass" href="https://github.com/laibaashfaq00/my_portfolio">GitHub ↗</a>
+</header>
+<main>
+<h1>Hi, I'm Laiba Ashfaq</h1>
+<p style="background:rgba(255,255,255,0.9);padding:18px;border-radius:12px;line-height:1.7;margin-bottom:20px">
+A passionate learner from D4WEE Tier 2 - Web Development & Data Analytics.
+I build clean websites with HTML & CSS. This is my Week 1 final portfolio.
+</p>
+<div style="background:rgba(255,255,255,0.9);padding:18px;border-radius:12px">
+<h3>Skills</h3>
+<ul style="margin-left:20px;margin-top:10px;line-height:1.8">
+<li>HTML & CSS</li>
+<li>Git & GitHub</li>
+<li>Data Analysis</li>
+</ul>
 </div>
-</div>
-<div class="glass">
-<div style="display:flex;gap:8px;margin-bottom:20px"><span style="width:12px;height:12px;border-radius:50%;background:#ff5f56"></span><span style="width:12px;height:12px;border-radius:50%;background:#ffbd2e"></span><span style="width:12px;height:12px;border-radius:50%;background:#27c93f"></span></div>
-<h3>Portfolio Status</h3>
-<p style="color:rgba(255,255,255,0.5);font-size:13px;margin:8px 0 18px">Upgraded to advance gradient look ✓</p>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px">
-<span class="pill">PURPLE • PINK</span><span class="pill">CYAN • BLUE</span><span class="pill">GLASSMORPHISM</span>
-</div>
-<div style="background:rgba(0,0,0,0.4);border-radius:14px;padding:14px;font-family:monospace;font-size:12px;color:#aaa">
-const portfolio = {<br>&nbsp;&nbsp;level: "advance",<br>&nbsp;&nbsp;basic: false,<br>&nbsp;&nbsp;colors: ["gradient"]<br>}
-</div>
-</div>
-</div>
-<section id="work">
-<h2 class="section-title">Selected <span>Work —</span></h2>
-<div class="grid">
-<div class="card"><span class="pill">GOOGLE SHEETS</span><span class="pill">LIVE</span><h3>Craft Shop Analysis</h3><p>Complete sales dashboard with profit tracking, best-selling products & monthly trends.</p></div>
-<div class="card"><span class="pill">PYTHON</span><span class="pill">CHARTS</span><h3>Python Data Viz</h3><p>Cleaned messy data with Pandas, visualized with Matplotlib. Automated reporting.</p></div>
-</div>
-</section>
-<section id="skills">
-<h2 class="section-title">Skills <span>Stack —</span></h2>
-<div class="grid">
-<div class="card"><h3>What I Use</h3><p style="margin-bottom:16px">Tools I actually used in class</p><div style="display:flex;flex-wrap:wrap;gap:8px"><span class="pill">HTML • CSS Gradient</span><span class="pill">GitHub Pages</span><span class="pill">Google Sheets</span><span class="pill">Python</span></div></div>
-<div class="card" style="background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(236,72,153,0.1))"><h3>Why Not Basic?</h3><p>Because Mam said basic not allowed 🙂 So I added animated gradient blobs, glass cards, hover effects & multi-color magic.</p></div>
-</div>
-</section>
-<section id="contact"><div class="glass" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px"><div><h3 style="font-size:28px">Let's make it live? 🚀</h3><p style="color:rgba(255,255,255,0.5);margin-top:6px">Push this code to: github.com/laibaashfaq00/my_portfolio</p></div><a class="btn-gradient" href="mailto:laiba@example.com">Contact Me</a></div></section>
-<footer><span>© 2026 Laiba Ashfaq — Gradient Edition</span><span>Built with 💜💗💙</span></footer>
+</main>
 </body>
 </html>
